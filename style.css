@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Roboto';
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    background: linear-gradient(#e66465, #9198e5);
+    width: 100vw;
+    height: 100vh;
+}
+
+#profileCard {
+    width: 300px;
+    height: 375px;
+    margin: auto;
+    background: url("https://photogrist.com/wp-content/uploads/2017/02/Andre-Nguyen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profilePicture {
+    width: 100%;
+}
+
+#profileCard:hover>.profileElement {
+    opacity: 0.9;
+    transform: translateY(0);
+}
+
+.profileElement {
+    background-color: #eee;
+    transition-duration: 500ms;
+    opacity: 0;
+}
+
+.followContainer {
+    transform: translateX(100%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+.followContainer:hover {
+    background-color: #294397;
+}
+
+.followContainer:hover>i {
+    color: #fff;
+}
+
+.followContainer h1 {
+    font-size: 24px;
+    padding: 0 5px;
+}
+
+.followContainer i {
+    margin: auto 0;
+}
+
+.infoContainer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100%);
+}
+
+.name {
+    text-align: center;
+    font-size: 26px;
+    padding-top: 10px;
+}
+
+.statsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.statsItem {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.statsItem>i {
+    margin: auto;
+    padding-bottom: 5px;
+}
